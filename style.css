@@ -1,293 +1,102 @@
-/* ------------------------------
-   BASE
---------------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
+/* BASE */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     font-family: "Poppins", sans-serif;
-    color: #222;
     background: #fafafa;
+    color: #222;
     line-height: 1.6;
 }
 
-/* Containers */
 .container {
     width: 90%;
-    max-width: 1100px;
+    max-width: 900px;
     margin: auto;
 }
 
 .section {
-    padding: 60px 0;
+    padding: 50px 0;
 }
 
-h1, h2, h3, h4 {
+.white {
+    background: #fff;
+}
+
+h1, h2, h3 {
     font-weight: 600;
-    color: #111;
+}
+
+h2 {
+    margin-bottom: 15px;
 }
 
 .muted {
     color: #666;
-    font-size: 0.95rem;
 }
 
-/* ------------------------------
-   HERO / HEADER
---------------------------------*/
+/* HERO */
 .hero {
-    padding: 70px 20px 40px;
     text-align: center;
+    padding: 60px 20px;
     background: #fff;
     border-bottom: 1px solid #eee;
-}
-
-.logo-wrap {
-    margin-bottom: 20px;
-}
-
-.logo-main {
-    width: 120px;
-    height: auto;
-    transition: opacity .2s ease;
-}
-
-.logo-main.fade {
-    opacity: 0.3;
-}
-
-.brand-name {
-    letter-spacing: 3px;
-    font-size: 2.2rem;
 }
 
 .tagline {
     margin-top: 5px;
-    color: #666;
+    color: #555;
 }
 
-/* ------------------------------
-   LOGO SELEÇÃO
---------------------------------*/
-.logo-choices {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    margin-top: 18px;
-}
-
-.logo-choice {
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    padding: 6px;
-    border-radius: 8px;
-    transition: 0.2s;
-    opacity: 0.6;
-}
-
-.logo-choice img {
-    width: 50px;
-    height: auto;
-}
-
-.logo-choice:hover {
-    opacity: 1;
-    transform: scale(1.05);
-}
-
-.logo-choice.active {
-    opacity: 1;
-    box-shadow: 0 0 0 2px #000 inset;
-}
-
-/* ------------------------------
-   BOTÕES
---------------------------------*/
+/* BOTÕES */
 .btn {
     display: inline-block;
     padding: 14px 22px;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
     border-radius: 10px;
     font-weight: 600;
-    text-decoration: none;
-    margin: 10px;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
-.whatsapp {
-    background: #25d366;
-    color: white;
-}
+.whatsapp { background: #25d366; }
+.instagram { background: #E4405F; }
+.appbarber { background: #111; }
 
-.appbarber {
-    background: #111;
-    color: #fff;
-}
+.btn:hover { opacity: 0.85; }
 
-.btn:hover {
-    opacity: 0.85;
-}
-
-.btn.outline {
-    border: 2px solid #333;
-    color: #111;
-    background: transparent;
-}
-
-.btn.outline:hover {
-    background: #111;
-    color: #fff;
-}
-
-/* ------------------------------
-   NAV
---------------------------------*/
-.nav {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding: 18px 0;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    position: sticky;
-    top: 0;
-    z-index: 50;
-}
-
-.nav a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #333;
-    transition: 0.2s;
-}
-
-.nav a:hover {
-    color: black;
-}
-
-/* ------------------------------
-   VALORES / CARDS
---------------------------------*/
-.card-section {
-    background: #fff;
-}
-
-.prices {
+/* PLANOS */
+.plans {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.price-card {
+.plan-card {
     background: #fff;
     padding: 25px;
     border-radius: 12px;
     border: 1px solid #eee;
+    text-align: center;
     transition: 0.25s;
 }
 
-.price-card:hover {
+.plan-card:hover {
     border-color: #ccc;
 }
 
 .price {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin: 8px 0;
-    font-weight: 600;
+    font-weight: bold;
 }
 
-/* ------------------------------
-   SERVIÇOS GRID
---------------------------------*/
-.services-grid {
-    display: grid;
-    gap: 20px;
-    margin-top: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+.desc {
+    color: #666;
 }
 
-.service {
-    background: #fff;
-    padding: 18px 20px;
-    border-radius: 10px;
-    border: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    transition: 0.25s;
-}
-
-.service:hover {
-    border-color: #ccc;
-}
-
-/* ------------------------------
-   GALERIA
---------------------------------*/
-.gallery-section {
-    background: #fafafa;
-}
-
-.gallery-grid {
-    display: grid;
-    gap: 12px;
-    margin: 30px 0;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: 0.25s;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.02);
-}
-
-/* ------------------------------
-   MAPA
---------------------------------*/
-.map-wrap {
-    margin-top: 25px;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.map-wrap iframe {
-    width: 100%;
-    height: 350px;
-    border: none;
-}
-
-/* ------------------------------
-   CONTATO
---------------------------------*/
-.contact-grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.contact-card {
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #eee;
-    background: #fff;
-}
-
-/* ------------------------------
-   FOOTER
---------------------------------*/
+/* FOOTER */
 .footer {
     padding: 25px;
     text-align: center;
