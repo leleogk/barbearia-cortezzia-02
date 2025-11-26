@@ -16,6 +16,7 @@ body {
 .fade-up { animation: fadeUp 1.2s ease-out; }
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
 @keyframes fadeUp { 
     from { opacity: 0; transform: translateY(40px); } 
     to { opacity: 1; transform: translateY(0); }
@@ -64,13 +65,26 @@ body {
     margin-bottom: 20px;
 }
 
-/* CARDS */
+/* GRID GERAL */
 .grid {
     display: grid;
     gap: 20px;
+    margin-top: 25px;
+}
+
+/* SERVIÇOS + PRODUTOS */
+.dual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     margin-top: 30px;
 }
 
+@media(max-width: 900px) {
+    .dual-grid { grid-template-columns: 1fr; }
+}
+
+/* CARDS */
 .card {
     background: #1a1a1a;
     padding: 25px;
@@ -104,7 +118,7 @@ body {
     opacity: 0.7;
 }
 
-/* WHATSAPP FLOAT */
+/* BOTÃO FLUTUANTE WHATSAPP */
 .whatsapp-float {
     position: fixed;
     bottom: 25px;
@@ -115,4 +129,5 @@ body {
     padding: 15px;
     border-radius: 50%;
     text-decoration: none;
+    box-shadow: 0 0 12px #00ff9d;
 }
