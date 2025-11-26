@@ -3,59 +3,68 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Barbearia Cortezzia</title>
+
+    <title>Barbearia Cortezzia • Corte, Barba e Estilo em Natal/RN</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Barbearia Cortezzia — cortes masculinos, barba, sobrancelha e serviços premium desde 2017. Agende pelo WhatsApp ou AppBarber. Localizada em Lagoa Nova, Natal/RN.">
+    <meta name="author" content="Barbearia Cortezzia">
+
+    <!-- Pré-carregamento das logos -->
+    <link rel="preload" href="logo1.png" as="image">
+    <link rel="preload" href="logo2.png" as="image">
 
     <!-- Fonte -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="site">
 
-        <!-- CABEÇALHO / HERO -->
+        <!-- HERO -->
         <header class="hero">
             <div class="hero-inner">
-                <!-- Logo principal (troque dinamicamente com os thumbnails) -->
+
                 <div class="logo-wrap">
-                    <img id="mainLogo" src="logo1.png" alt="Logo Cortezzia" class="logo-main">
+                    <img id="mainLogo" src="logo1.png" alt="Logo Barbearia Cortezzia" class="logo-main" loading="eager">
                 </div>
 
                 <div class="brand-text">
                     <h1 class="brand-name">CORTEZZIA</h1>
-                    <p class="tagline">A arte de transformar é nossa paixão — desde 2017 ✂️</p>
+                    <p class="tagline">Transformando seu estilo desde 2017 ✂️</p>
 
-                    <!-- escolhas de logo (todas as opções) -->
-                    <div class="logo-choices">
-                        <button class="logo-choice" data-src="logo1.png" title="Logo 1">
-                            <img src="logo1.png" alt="Logo 1">
+                    <!-- Seletor de logos -->
+                    <div class="logo-choices" role="group" aria-label="Escolher logo">
+                        <button class="logo-choice active" data-src="logo1.png" aria-label="Logo padrão" aria-pressed="true">
+                            <img src="logo1.png" alt="">
                         </button>
-                        <button class="logo-choice" data-src="logo2.png" title="Logo 2 (Natal)">
-                            <img src="logo2.png" alt="Logo 2">
+                        <button class="logo-choice" data-src="logo2.png" aria-label="Logo temática de Natal">
+                            <img src="logo2.png" alt="">
                         </button>
-                        <button class="logo-choice" data-src="logo3.png" title="Logo 3 (sem gorro)">
-                            <img src="logo3.png" alt="Logo 3">
+                        <button class="logo-choice" data-src="logo3.png" aria-label="Logo alternativa 1">
+                            <img src="logo3.png" alt="">
                         </button>
-                        <button class="logo-choice" data-src="logo4.png" title="Logo 4 (alternativa)">
-                            <img src="logo4.png" alt="Logo 4">
+                        <button class="logo-choice" data-src="logo4.png" aria-label="Logo alternativa 2">
+                            <img src="logo4.png" alt="">
                         </button>
                     </div>
                 </div>
             </div>
 
-            <!-- CTA buttons -->
+            <!-- CTAs -->
             <div class="hero-ctas">
                 <a class="btn whatsapp" href="https://wa.me/55849981747266" target="_blank" rel="noopener">
                     Agendar pelo WhatsApp
                 </a>
                 <a class="btn appbarber" href="https://sites.appbarber.com.br/barbeariacortezzia-bd0u" target="_blank" rel="noopener">
-                    Agendar pelo App Barber
+                    Agendar pelo AppBarber
                 </a>
             </div>
         </header>
 
-        <!-- NAVEGAÇÃO SIMPLES -->
-        <nav class="nav">
+        <!-- NAVEGAÇÃO -->
+        <nav class="nav" aria-label="Navegação principal">
             <a href="#valores">Valores</a>
             <a href="#servicos">Serviços</a>
             <a href="#galeria">Galeria</a>
@@ -68,21 +77,24 @@
             <div class="container">
                 <h2>Valores & Assinaturas</h2>
                 <div class="prices">
-                    <div class="price-card">
+
+                    <article class="price-card">
                         <h3>Assinatura Mensal</h3>
                         <p class="price">R$ 89,90 / mês</p>
                         <p class="muted">Corte + barba (1x por semana)</p>
-                    </div>
-                    <div class="price-card">
+                    </article>
+
+                    <article class="price-card">
                         <h3>Corte</h3>
                         <p class="price">R$ 35</p>
-                        <p class="muted">Corte social, máquina ou tesoura</p>
-                    </div>
-                    <div class="price-card">
+                        <p class="muted">Social, máquina ou tesoura</p>
+                    </article>
+
+                    <article class="price-card">
                         <h3>Barba</h3>
                         <p class="price">R$ 35</p>
-                        <p class="muted">Navalha, desenho e finalização</p>
-                    </div>
+                        <p class="muted">Desenho, navalha e finalização</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -91,70 +103,53 @@
         <section id="servicos" class="section">
             <div class="container">
                 <h2>Nossos Serviços</h2>
+
                 <div class="cards services-grid">
-                    <div class="service">
-                        <h4>Corte</h4><span class="service-price">R$ 35</span>
-                    </div>
-                    <div class="service">
-                        <h4>Barba</h4><span class="service-price">R$ 35</span>
-                    </div>
-                    <div class="service">
-                        <h4>Corte Navalhado</h4><span class="service-price">R$ 40</span>
-                    </div>
-                    <div class="service">
-                        <h4>Corte Tesoura</h4><span class="service-price">R$ 40</span>
-                    </div>
-                    <div class="service">
-                        <h4>Sobrancelha</h4><span class="service-price">R$ 20</span>
-                    </div>
-                    <div class="service">
-                        <h4>Barboterapia</h4><span class="service-price">R$ 50</span>
-                    </div>
-                    <div class="service">
-                        <h4>Progressiva</h4><span class="service-price">R$ 120</span>
-                    </div>
-                    <div class="service">
-                        <h4>Descoloração / Luzes</h4><span class="service-price">R$ 100–120</span>
-                    </div>
-                    <div class="service">
-                        <h4>Pigmentação / Hidratação</h4><span class="service-price">R$ 30</span>
-                    </div>
+                    <div class="service"><h4>Corte</h4><span>R$ 35</span></div>
+                    <div class="service"><h4>Barba</h4><span>R$ 35</span></div>
+                    <div class="service"><h4>Corte Navalhado</h4><span>R$ 40</span></div>
+                    <div class="service"><h4>Corte Tesoura</h4><span>R$ 40</span></div>
+                    <div class="service"><h4>Sobrancelha</h4><span>R$ 20</span></div>
+                    <div class="service"><h4>Barboterapia</h4><span>R$ 50</span></div>
+                    <div class="service"><h4>Progressiva</h4><span>R$ 120</span></div>
+                    <div class="service"><h4>Luzes / Descoloração</h4><span>R$ 100–120</span></div>
+                    <div class="service"><h4>Pigmentação / Hidratação</h4><span>R$ 30</span></div>
                 </div>
             </div>
         </section>
 
-        <!-- GALERIA (estilo instagram) -->
+        <!-- GALERIA -->
         <section id="galeria" class="section gallery-section">
             <div class="container">
                 <h2>Galeria</h2>
-                <p class="muted">Alguns trabalhos recentes — acompanhe também no Instagram</p>
+                <p class="muted">Acompanhe mais no Instagram</p>
 
                 <div class="gallery-grid">
-                    <!-- substitua por suas imagens reais -->
-                    <img src="gallery1.jpg" alt="Galeria 1">
-                    <img src="gallery2.jpg" alt="Galeria 2">
-                    <img src="gallery3.jpg" alt="Galeria 3">
-                    <img src="gallery4.jpg" alt="Galeria 4">
-                    <img src="gallery5.jpg" alt="Galeria 5">
-                    <img src="gallery6.jpg" alt="Galeria 6">
+                    <img src="gallery1.jpg" alt="Corte 1" loading="lazy">
+                    <img src="gallery2.jpg" alt="Corte 2" loading="lazy">
+                    <img src="gallery3.jpg" alt="Corte 3" loading="lazy">
+                    <img src="gallery4.jpg" alt="Corte 4" loading="lazy">
+                    <img src="gallery5.jpg" alt="Corte 5" loading="lazy">
+                    <img src="gallery6.jpg" alt="Corte 6" loading="lazy">
                 </div>
 
-                <a class="btn outline" href="https://www.instagram.com/barbeariacortezzia" target="_blank" rel="noopener">Ver no Instagram</a>
+                <a class="btn outline" href="https://www.instagram.com/barbeariacortezzia" target="_blank" rel="noopener">
+                    Ver no Instagram
+                </a>
             </div>
         </section>
 
-        <!-- ENDEREÇO + MAPA -->
+        <!-- ENDEREÇO -->
         <section id="endereco" class="section card-section">
             <div class="container">
                 <h2>Endereço</h2>
-                <p class="muted">Rua Almirante Tamandaré 281, Lagoa Nova, Natal, Rio Grande do Norte — 59054-560</p>
+                <p class="muted">Rua Almirante Tamandaré 281, Lagoa Nova, Natal/RN — 59054-560</p>
 
                 <div class="map-wrap">
                     <iframe
-                        title="Mapa Barbearia Cortezzia"
-                        src="https://www.google.com/maps?q=Rua%20Almirante%20Tamandare%20281%2C%20Lagoa%20Nova%2C%20Natal%2C%20Rio%20Grande%20do%20Norte%2059054560&output=embed"
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
+                        title="Mapa da Barbearia Cortezzia"
+                        src="https://www.google.com/maps?q=Rua%20Almirante%20Tamandare%20281,Natal&output=embed"
+                        loading="lazy">
                     </iframe>
                 </div>
             </div>
@@ -163,16 +158,21 @@
         <!-- CONTATO -->
         <section id="contato" class="section contact-section">
             <div class="container contact-grid">
+
                 <div class="contact-card">
                     <h3>Fale Conosco</h3>
-                    <p>📞 WhatsApp: <a href="https://wa.me/55849981747266" target="_blank" rel="noopener">(84) 99817-47266</a></p>
-                    <p>⏰ Horário: Ter–Dom 09:00–19:00</p>
+                    <p>📞 WhatsApp: 
+                        <a href="https://wa.me/55849981747266" target="_blank" rel="noopener">
+                            (84) 99817-47266
+                        </a>
+                    </p>
+                    <p>⏰ Terça a Domingo: 09h às 19h</p>
                 </div>
 
                 <div class="contact-card">
-                    <h3>Redes</h3>
-                    <p><a href="https://www.instagram.com/barbeariacortezzia" target="_blank" rel="noopener">Instagram</a></p>
-                    <p><a href="https://linktr.ee/barbeariacortezzia" target="_blank" rel="noopener">Linktree</a></p>
+                    <h3>Redes sociais</h3>
+                    <p><a href="https://www.instagram.com/barbeariacortezzia" target="_blank">Instagram</a></p>
+                    <p><a href="https://linktr.ee/barbeariacortezzia" target="_blank">Linktree</a></p>
                 </div>
             </div>
         </section>
@@ -184,22 +184,34 @@
 
     </main>
 
-    <!-- Script: troca de logo -->
+    <!-- SCRIPT: troca de logo otimizado -->
     <script>
-        document.querySelectorAll('.logo-choice').forEach(btn=>{
-            btn.addEventListener('click', ()=> {
-                const src = btn.getAttribute('data-src');
-                const main = document.getElementById('mainLogo');
-                main.src = src;
-                // destaque visual pequeno
-                document.querySelectorAll('.logo-choice').forEach(b=>b.classList.remove('active'));
+        const mainLogo = document.getElementById('mainLogo');
+
+        document.querySelectorAll('.logo-choice').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const src = btn.dataset.src;
+
+                // preload + troca suave
+                const temp = new Image();
+                temp.onload = () => {
+                    mainLogo.classList.add('fade');
+                    setTimeout(() => {
+                        mainLogo.src = src;
+                        mainLogo.classList.remove('fade');
+                    }, 150);
+                };
+                temp.src = src;
+
+                document.querySelectorAll('.logo-choice')
+                    .forEach(b => b.classList.remove('active'));
+
                 btn.classList.add('active');
             });
         });
 
-        // fallback: se alguma imagem não existir, esconder espaço
-        document.getElementById('mainLogo').addEventListener('error', (e)=>{
-            e.target.style.display = 'none';
+        mainLogo.addEventListener('error', () => {
+            mainLogo.style.display = 'none';
         });
     </script>
 </body>
