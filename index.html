@@ -4,150 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia Cortezzia</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark">
 
-<!-- BOTÃO DE MODO ESCURO / CLARO -->
-<button id="themeToggle" class="theme-toggle">🌙</button>
+<body>
 
-<!-- BOTÃO FLUTUANTE WHATSAPP -->
-<a href="https://wa.me/qr/7NIQ3RFN466AB1" class="whatsapp-float" target="_blank">💬</a>
-
-<main class="site fade-in">
-
-    <!-- HERO -->
+    <!-- HERO --------------------------------------->
     <header class="hero fade-in">
-        <img src="logo1.png" alt="Logo Cortezzia" class="logo">
-
         <h1>Barbearia Cortezzia</h1>
-        <p class="tagline">Seu estilo todos os dias — com assinatura inteligente.</p>
+        <p class="subtitle">Excelência em cortes masculinos desde 2017 ✂️</p>
 
-        <div class="qr-box slide-up">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https://wa.me/qr/7NIQ3RFN466AB1" 
-                 alt="QR Code WhatsApp" class="qr-code">
-            <p class="muted">Aponte a câmera e fale conosco</p>
+        <div class="cta-wrap">
+            <a class="btn primary" href="https://wa.me/5584981747266?text=Olá,+vim+pelo+instagram" target="_blank">
+                Agendar pelo WhatsApp
+            </a>
+
+            <a class="btn secondary" href="https://sites.appbarber.com.br/barbeariacortezzia-bd0u" target="_blank">
+                Agendar pelo AppBarber
+            </a>
         </div>
 
-        <div class="cta-area">
-            <a href="https://wa.me/qr/7NIQ3RFN466AB1" class="btn whatsapp">WhatsApp</a>
-            <a href="https://www.instagram.com/barbeariacortezzia" class="btn instagram">Instagram</a>
-            <a href="https://sites.appbarber.com.br/barbeariacortezzia-bd0u" class="btn appbarber">Agendar no AppBarber</a>
-        </div>
+        <img class="qr-code" 
+             src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https://wa.me/5584981747266?text=Olá,+vim+pelo+instagram" 
+             alt="QR Code WhatsApp">
     </header>
 
-    <!-- HORÁRIOS -->
-    <section class="section dark-card fade-in">
-        <div class="container">
-            <h2>Horário de Funcionamento</h2>
 
-            <div class="hours">
-                <p>🕘 Segunda a Sábado — <strong>09:00 às 19:00</strong></p>
-                <p>⛔ Domingo — <strong>Fechado</strong></p>
+    <!-- PLANOS ------------------------------------->
+    <section class="section fade-up">
+        <h2>Planos Cortezzia (Mensalidade)</h2>
+        <p class="muted">Assine e corte todos os dias de segunda a sábado.</p>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Corte Plus</h3>
+                <p class="price">R$ 84,90 / mês</p>
+                <ul>
+                    <li>Cortes ilimitados</li>
+                    <li>Segunda a sábado</li>
+                </ul>
             </div>
-        </div>
-    </section>
 
-    <!-- PLANOS -->
-    <section class="section fade-in">
-        <div class="container">
-            <h2>Planos Cortezzia</h2>
-            <p class="muted">Assine uma vez e corte todos os dias — seg a sáb.</p>
-
-            <div class="plans">
-
-                <div class="plan-card">
-                    <h3>Corte Plus</h3>
-                    <p class="price">R$ 84,90 / mês</p>
-                    <ul>
-                        <li>Cortes ilimitados</li>
-                        <li>Segunda a sábado</li>
-                    </ul>
-                </div>
-
-                <div class="plan-card highlight">
-                    <h3>Corte + Barba Plus</h3>
-                    <p class="price">R$ 164,90 / mês</p>
-                    <ul>
-                        <li>Corte ilimitado</li>
-                        <li>Barba ilimitada</li>
-                    </ul>
-                </div>
-
-                <div class="plan-card">
-                    <h3>Barba Plus</h3>
-                    <p class="price">R$ 99,90 / mês</p>
-                    <ul>
-                        <li>Barba ilimitada</li>
-                        <li>Segunda a sábado</li>
-                    </ul>
-                </div>
-
+            <div class="card highlight">
+                <h3>Corte + Barba Plus</h3>
+                <p class="price">R$ 164,90 / mês</p>
+                <ul>
+                    <li>Corte ilimitado</li>
+                    <li>Barba ilimitada</li>
+                </ul>
             </div>
-        </div>
-    </section>
 
-    <!-- SERVIÇOS -->
-    <section class="section dark-card fade-in">
-        <div class="container">
-            <h2>Serviços Avulsos</h2>
-
-            <div class="plans">
-                <div class="plan-card"><h3>Corte</h3><p class="price">R$ 35</p></div>
-                <div class="plan-card"><h3>Barba</h3><p class="price">R$ 35</p></div>
-                <div class="plan-card"><h3>Corte Navalhado</h3><p class="price">R$ 40</p></div>
-                <div class="plan-card"><h3>Sobrancelha</h3><p class="price">R$ 20</p></div>
-                <div class="plan-card"><h3>Barboterapia</h3><p class="price">R$ 50</p></div>
-                <div class="plan-card"><h3>Progressiva</h3><p class="price">R$ 120</p></div>
-                <div class="plan-card"><h3>Luzes / Descoloração</h3><p class="price">R$ 100–120</p></div>
-                <div class="plan-card"><h3>Pigmentação / Hidratação</h3><p class="price">R$ 30</p></div>
+            <div class="card">
+                <h3>Barba Plus</h3>
+                <p class="price">R$ 99,90 / mês</p>
+                <ul>
+                    <li>Barba ilimitada</li>
+                    <li>Segunda a sábado</li>
+                </ul>
             </div>
+
         </div>
     </section>
 
-    <!-- LOCALIZAÇÃO -->
-    <section class="section fade-in">
-        <div class="container">
-            <h2>Localização</h2>
-            <p class="muted">Rua Almirante Tamandaré 281 — Lagoa Nova, Natal/RN</p>
 
-            <div class="map-wrap slide-up">
-                <iframe
-                    title="Mapa Barbearia Cortezzia"
-                    src="https://www.google.com/maps?q=Rua%20Almirante%20Tamandare%20281%2C%20Natal&output=embed"
-                    loading="lazy">
-                </iframe>
-            </div>
+    <!-- SERVIÇOS ----------------------------------->
+    <section class="section fade-up">
+        <h2>Serviços Avulsos</h2>
+        <p class="muted">Valores variam conforme estilo, técnica e materiais.</p>
+
+        <div class="grid">
+
+            <div class="card"><h3>Corte</h3><p class="price">A partir de R$ 35</p></div>
+            <div class="card"><h3>Barba</h3><p class="price">A partir de R$ 35</p></div>
+            <div class="card"><h3>Corte Navalhado</h3><p class="price">A partir de R$ 40</p></div>
+            <div class="card"><h3>Sobrancelha</h3><p class="price">A partir de R$ 20</p></div>
+            <div class="card"><h3>Barboterapia</h3><p class="price">A partir de R$ 50</p></div>
+            <div class="card"><h3>Progressiva</h3><p class="price">A partir de R$ 120</p></div>
+            <div class="card"><h3>Luzes / Descoloração</h3><p class="price">A partir de R$ 100</p></div>
+            <div class="card"><h3>Pigmentação / Hidratação</h3><p class="price">A partir de R$ 30</p></div>
+
         </div>
     </section>
 
-    <section class="section dark-card fade-in">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>📱 WhatsApp: <a href="https://wa.me/qr/7NIQ3RFN466AB1">Clique aqui</a></p>
-            <p>📸 Instagram: <a href="https://www.instagram.com/barbeariacortezzia">@barbeariacortezzia</a></p>
-            <p>📲 AppBarber: <a href="https://sites.appbarber.com.br/barbeariacortezzia-bd0u">Agendar</a></p>
+
+    <!-- ENDEREÇO ----------------------------------->
+    <section class="section fade-up">
+        <h2>Localização</h2>
+        <p class="muted">Rua Almirante Tamandaré, 281 – Lagoa Nova – Natal/RN</p>
+
+        <div class="map-wrap">
+            <iframe 
+                src="https://www.google.com/maps?q=Rua%20Almirante%20Tamandaré%20281,%20Lagoa%20Nova%20Natal&output=embed"
+                loading="lazy">
+            </iframe>
         </div>
     </section>
 
-    <footer class="footer">
-        <p>© 2025 Barbearia Cortezzia</p>
+
+    <!-- CONTATO ------------------------------------>
+    <section class="section fade-up">
+        <h2>Contato</h2>
+
+        <p class="muted">Horário: Seg–Sáb 09:00–19:00 • Domingo fechado</p>
+
+        <div class="cta-wrap">
+            <a class="btn primary" href="https://wa.me/5584981747266?text=Olá,+vim+pelo+instagram" target="_blank">
+                WhatsApp
+            </a>
+
+            <a class="btn secondary" href="https://www.instagram.com/barbeariacortezzia" target="_blank">
+                Instagram
+            </a>
+        </div>
+    </section>
+
+
+    <!-- RODAPÉ ------------------------------------->
+    <footer class="footer fade-in">
+        <p>© 2025 Barbearia Cortezzia — Todos os direitos reservados</p>
     </footer>
 
-</main>
 
-<!-- SCRIPT DO TEMA -->
-<script>
-const body = document.body;
-const btn = document.getElementById("themeToggle");
+    <!-- BOTÃO FLUTUANTE ----------------------------->
+    <a href="https://wa.me/5584981747266?text=Olá,+vim+pelo+instagram" class="whatsapp-float" target="_blank">💬</a>
 
-btn.addEventListener("click", () => {
-    body.classList.toggle("dark");
-    body.classList.toggle("light");
 
-    btn.textContent = body.classList.contains("dark") ? "🌙" : "☀️";
-});
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
