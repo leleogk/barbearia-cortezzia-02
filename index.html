@@ -1,45 +1,206 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Barbearia Cortezzia</title>
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <main class="site">
 
-    <header>
-        <img src="logo.png" alt="Logo Cortezzia" class="logo">
-        <h1 class="title">CORTEZZIA BARBEARIA</h1>
-        <p class="desc">A arte de transformar é nossa paixão. Desde 2017 mudando vidas ✂️</p>
-    </header>
+        <!-- CABEÇALHO / HERO -->
+        <header class="hero">
+            <div class="hero-inner">
+                <!-- Logo principal (troque dinamicamente com os thumbnails) -->
+                <div class="logo-wrap">
+                    <img id="mainLogo" src="logo1.png" alt="Logo Cortezzia" class="logo-main">
+                </div>
 
-    <section class="buttons">
-        <a class="btn" href="#valores">Valores</a>
-        <a class="btn" href="#servicos">Serviços</a>
-        <a class="btn" href="#endereco">Endereço</a>
-        <a class="btn" href="https://wa.me/558498456" target="_blank">WhatsApp</a>
-    </section>
+                <div class="brand-text">
+                    <h1 class="brand-name">CORTEZZIA</h1>
+                    <p class="tagline">A arte de transformar é nossa paixão — desde 2017 ✂️</p>
 
-    <section id="valores" class="box">
-        <h2>Valores</h2>
-        <p>Cortes, barba, sobrancelha e pacotes especiais por assinatura.</p>
-    </section>
+                    <!-- escolhas de logo (todas as opções) -->
+                    <div class="logo-choices">
+                        <button class="logo-choice" data-src="logo1.png" title="Logo 1">
+                            <img src="logo1.png" alt="Logo 1">
+                        </button>
+                        <button class="logo-choice" data-src="logo2.png" title="Logo 2 (Natal)">
+                            <img src="logo2.png" alt="Logo 2">
+                        </button>
+                        <button class="logo-choice" data-src="logo3.png" title="Logo 3 (sem gorro)">
+                            <img src="logo3.png" alt="Logo 3">
+                        </button>
+                        <button class="logo-choice" data-src="logo4.png" title="Logo 4 (alternativa)">
+                            <img src="logo4.png" alt="Logo 4">
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-    <section id="servicos" class="box">
-        <h2>Serviços</h2>
-        <p>Atendimento profissional, ambiente climatizado e experiência premium.</p>
-    </section>
+            <!-- CTA buttons -->
+            <div class="hero-ctas">
+                <a class="btn whatsapp" href="https://wa.me/55849981747266" target="_blank" rel="noopener">
+                    Agendar pelo WhatsApp
+                </a>
+                <a class="btn appbarber" href="https://sites.appbarber.com.br/barbeariacortezzia-bd0u" target="_blank" rel="noopener">
+                    Agendar pelo App Barber
+                </a>
+            </div>
+        </header>
 
-    <section id="endereco" class="box">
-        <h2>Endereço</h2>
-        <p>Rua Almirante Tamandaré 281, Lagoa Nova, Natal, RN – 59054-560</p>
-    </section>
+        <!-- NAVEGAÇÃO SIMPLES -->
+        <nav class="nav">
+            <a href="#valores">Valores</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#endereco">Endereço</a>
+            <a href="#contato">Contato</a>
+        </nav>
 
-    <footer>
-        <p>© 2024 Barbearia Cortezzia. Todos os direitos reservados.</p>
-    </footer>
+        <!-- VALORES -->
+        <section id="valores" class="section card-section">
+            <div class="container">
+                <h2>Valores & Assinaturas</h2>
+                <div class="prices">
+                    <div class="price-card">
+                        <h3>Assinatura Mensal</h3>
+                        <p class="price">R$ 89,90 / mês</p>
+                        <p class="muted">Corte + barba (1x por semana)</p>
+                    </div>
+                    <div class="price-card">
+                        <h3>Corte</h3>
+                        <p class="price">R$ 35</p>
+                        <p class="muted">Corte social, máquina ou tesoura</p>
+                    </div>
+                    <div class="price-card">
+                        <h3>Barba</h3>
+                        <p class="price">R$ 35</p>
+                        <p class="muted">Navalha, desenho e finalização</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- SERVIÇOS -->
+        <section id="servicos" class="section">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <div class="cards services-grid">
+                    <div class="service">
+                        <h4>Corte</h4><span class="service-price">R$ 35</span>
+                    </div>
+                    <div class="service">
+                        <h4>Barba</h4><span class="service-price">R$ 35</span>
+                    </div>
+                    <div class="service">
+                        <h4>Corte Navalhado</h4><span class="service-price">R$ 40</span>
+                    </div>
+                    <div class="service">
+                        <h4>Corte Tesoura</h4><span class="service-price">R$ 40</span>
+                    </div>
+                    <div class="service">
+                        <h4>Sobrancelha</h4><span class="service-price">R$ 20</span>
+                    </div>
+                    <div class="service">
+                        <h4>Barboterapia</h4><span class="service-price">R$ 50</span>
+                    </div>
+                    <div class="service">
+                        <h4>Progressiva</h4><span class="service-price">R$ 120</span>
+                    </div>
+                    <div class="service">
+                        <h4>Descoloração / Luzes</h4><span class="service-price">R$ 100–120</span>
+                    </div>
+                    <div class="service">
+                        <h4>Pigmentação / Hidratação</h4><span class="service-price">R$ 30</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA (estilo instagram) -->
+        <section id="galeria" class="section gallery-section">
+            <div class="container">
+                <h2>Galeria</h2>
+                <p class="muted">Alguns trabalhos recentes — acompanhe também no Instagram</p>
+
+                <div class="gallery-grid">
+                    <!-- substitua por suas imagens reais -->
+                    <img src="gallery1.jpg" alt="Galeria 1">
+                    <img src="gallery2.jpg" alt="Galeria 2">
+                    <img src="gallery3.jpg" alt="Galeria 3">
+                    <img src="gallery4.jpg" alt="Galeria 4">
+                    <img src="gallery5.jpg" alt="Galeria 5">
+                    <img src="gallery6.jpg" alt="Galeria 6">
+                </div>
+
+                <a class="btn outline" href="https://www.instagram.com/barbeariacortezzia" target="_blank" rel="noopener">Ver no Instagram</a>
+            </div>
+        </section>
+
+        <!-- ENDEREÇO + MAPA -->
+        <section id="endereco" class="section card-section">
+            <div class="container">
+                <h2>Endereço</h2>
+                <p class="muted">Rua Almirante Tamandaré 281, Lagoa Nova, Natal, Rio Grande do Norte — 59054-560</p>
+
+                <div class="map-wrap">
+                    <iframe
+                        title="Mapa Barbearia Cortezzia"
+                        src="https://www.google.com/maps?q=Rua%20Almirante%20Tamandare%20281%2C%20Lagoa%20Nova%2C%20Natal%2C%20Rio%20Grande%20do%20Norte%2059054560&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="section contact-section">
+            <div class="container contact-grid">
+                <div class="contact-card">
+                    <h3>Fale Conosco</h3>
+                    <p>📞 WhatsApp: <a href="https://wa.me/55849981747266" target="_blank" rel="noopener">(84) 99817-47266</a></p>
+                    <p>⏰ Horário: Ter–Dom 09:00–19:00</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Redes</h3>
+                    <p><a href="https://www.instagram.com/barbeariacortezzia" target="_blank" rel="noopener">Instagram</a></p>
+                    <p><a href="https://linktr.ee/barbeariacortezzia" target="_blank" rel="noopener">Linktree</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RODAPÉ -->
+        <footer class="footer">
+            <p>© 2025 Barbearia Cortezzia — Todos os direitos reservados</p>
+        </footer>
+
+    </main>
+
+    <!-- Script: troca de logo -->
+    <script>
+        document.querySelectorAll('.logo-choice').forEach(btn=>{
+            btn.addEventListener('click', ()=> {
+                const src = btn.getAttribute('data-src');
+                const main = document.getElementById('mainLogo');
+                main.src = src;
+                // destaque visual pequeno
+                document.querySelectorAll('.logo-choice').forEach(b=>b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        // fallback: se alguma imagem não existir, esconder espaço
+        document.getElementById('mainLogo').addEventListener('error', (e)=>{
+            e.target.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
