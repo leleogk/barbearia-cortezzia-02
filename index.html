@@ -3,46 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia Cortezzia — Planos e Agendamento</title>
+    <title>Barbearia Cortezzia</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark">
 
-<main class="site">
+<!-- BOTÃO DE MODO ESCURO / CLARO -->
+<button id="themeToggle" class="theme-toggle">🌙</button>
 
-    <!-- HERO / INÍCIO -->
-    <header class="hero">
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/qr/7NIQ3RFN466AB1" class="whatsapp-float" target="_blank">💬</a>
+
+<main class="site fade-in">
+
+    <!-- HERO -->
+    <header class="hero fade-in">
+        <img src="logo1.png" alt="Logo Cortezzia" class="logo">
+
         <h1>Barbearia Cortezzia</h1>
-        <p class="tagline">Seu estilo todos os dias — pagando uma única vez.</p>
+        <p class="tagline">Seu estilo todos os dias — com assinatura inteligente.</p>
 
-        <div class="qr-box">
+        <div class="qr-box slide-up">
             <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https://wa.me/qr/7NIQ3RFN466AB1" 
                  alt="QR Code WhatsApp" class="qr-code">
-            <p class="muted">Escaneie o QR Code para falar no WhatsApp</p>
+            <p class="muted">Aponte a câmera e fale conosco</p>
         </div>
 
         <div class="cta-area">
-            <a href="https://wa.me/qr/7NIQ3RFN466AB1" class="btn whatsapp" target="_blank">
-                Abrir WhatsApp
-            </a>
-
-            <a href="https://www.instagram.com/barbeariacortezzia" class="btn instagram" target="_blank">
-                Instagram
-            </a>
-
-            <a href="https://sites.appbarber.com.br/barbeariacortezzia-bd0u" class="btn appbarber" target="_blank">
-                Agendar no AppBarber
-            </a>
+            <a href="https://wa.me/qr/7NIQ3RFN466AB1" class="btn whatsapp">WhatsApp</a>
+            <a href="https://www.instagram.com/barbeariacortezzia" class="btn instagram">Instagram</a>
+            <a href="https://sites.appbarber.com.br/barbeariacortezzia-bd0u" class="btn appbarber">Agendar no AppBarber</a>
         </div>
     </header>
 
-    <!-- PLANOS PREMIUM -->
-    <section class="section">
+    <!-- HORÁRIOS -->
+    <section class="section dark-card fade-in">
         <div class="container">
-            <h2>Club Cortezzia — Planos Mensais</h2>
-            <p class="muted">Assine e corte de segunda a sábado, todos os dias, pagando apenas 1 vez.</p>
+            <h2>Horário de Funcionamento</h2>
 
-            <div class="plans premium">
+            <div class="hours">
+                <p>🕘 Segunda a Sábado — <strong>09:00 às 19:00</strong></p>
+                <p>⛔ Domingo — <strong>Fechado</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section class="section fade-in">
+        <div class="container">
+            <h2>Planos Cortezzia</h2>
+            <p class="muted">Assine uma vez e corte todos os dias — seg a sáb.</p>
+
+            <div class="plans">
 
                 <div class="plan-card">
                     <h3>Corte Plus</h3>
@@ -50,7 +62,6 @@
                     <ul>
                         <li>Cortes ilimitados</li>
                         <li>Segunda a sábado</li>
-                        <li>Assinatura mensal</li>
                     </ul>
                 </div>
 
@@ -60,7 +71,6 @@
                     <ul>
                         <li>Corte ilimitado</li>
                         <li>Barba ilimitada</li>
-                        <li>Segunda a sábado</li>
                     </ul>
                 </div>
 
@@ -70,7 +80,6 @@
                     <ul>
                         <li>Barba ilimitada</li>
                         <li>Segunda a sábado</li>
-                        <li>Assinatura mensal</li>
                     </ul>
                 </div>
 
@@ -78,8 +87,8 @@
         </div>
     </section>
 
-    <!-- SERVIÇOS AVULSOS -->
-    <section class="section white">
+    <!-- SERVIÇOS -->
+    <section class="section dark-card fade-in">
         <div class="container">
             <h2>Serviços Avulsos</h2>
 
@@ -96,44 +105,49 @@
         </div>
     </section>
 
-    <!-- ENDEREÇO -->
-    <section class="section">
+    <!-- LOCALIZAÇÃO -->
+    <section class="section fade-in">
         <div class="container">
-            <h2>Endereço</h2>
+            <h2>Localização</h2>
             <p class="muted">Rua Almirante Tamandaré 281 — Lagoa Nova, Natal/RN</p>
+
+            <div class="map-wrap slide-up">
+                <iframe
+                    title="Mapa Barbearia Cortezzia"
+                    src="https://www.google.com/maps?q=Rua%20Almirante%20Tamandare%20281%2C%20Natal&output=embed"
+                    loading="lazy">
+                </iframe>
+            </div>
         </div>
     </section>
 
-    <!-- CONTATO -->
-    <section class="section white">
+    <section class="section dark-card fade-in">
         <div class="container">
             <h2>Contato</h2>
-
-            <p>📱 WhatsApp (QR Code):  
-                <a href="https://wa.me/qr/7NIQ3RFN466AB1" target="_blank">
-                    Abrir conversa
-                </a>
-            </p>
-
-            <p>📸 Instagram:  
-                <a href="https://www.instagram.com/barbeariacortezzia" target="_blank">
-                    @barbeariacortezzia
-                </a>
-            </p>
-
-            <p>📲 AppBarber:  
-                <a href="https://sites.appbarber.com.br/barbeariacortezzia-bd0u" target="_blank">
-                    Agendar agora
-                </a>
-            </p>
+            <p>📱 WhatsApp: <a href="https://wa.me/qr/7NIQ3RFN466AB1">Clique aqui</a></p>
+            <p>📸 Instagram: <a href="https://www.instagram.com/barbeariacortezzia">@barbeariacortezzia</a></p>
+            <p>📲 AppBarber: <a href="https://sites.appbarber.com.br/barbeariacortezzia-bd0u">Agendar</a></p>
         </div>
     </section>
 
     <footer class="footer">
-        <p>© 2025 Barbearia Cortezzia — Todos os direitos reservados</p>
+        <p>© 2025 Barbearia Cortezzia</p>
     </footer>
 
 </main>
+
+<!-- SCRIPT DO TEMA -->
+<script>
+const body = document.body;
+const btn = document.getElementById("themeToggle");
+
+btn.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    body.classList.toggle("light");
+
+    btn.textContent = body.classList.contains("dark") ? "🌙" : "☀️";
+});
+</script>
 
 </body>
 </html>
